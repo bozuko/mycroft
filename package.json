@@ -1,0 +1,22 @@
+{
+  "author": "Andrew J. Stone <andrew.stone@bozuko.com>",
+  "name": "mycroft",
+  "description": "Centralized monitoring of servers and commandos",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.4.8"
+  },
+  "main": "./mycroft.js",
+  "bin": "./bin/mycroft",
+  "private":true,
+  "dependencies": {
+      "express" : "*",
+      "async" : "*",
+      "nodemailer" : "*",
+      "mongodb" : "*"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var mycroft = require('mycroft');
+
+var config = process.env.HOME + '/.mycroft';
+
+(function run() {
+     var options = require(config);
+     mycroft.start(options);
+})();
