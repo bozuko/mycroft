@@ -1,1 +1,0 @@
-sudo -E env PATH=$PATH commando &> $HOME/logs/commando.log&
