@@ -4,8 +4,10 @@ var mycroft = require('mycroft');
 var config = process.env.HOME + '/.mycroft';
 
 (function run() {
-     if (process.argv[2].slice(2) === '--config') {
-         config = process.argv[3];
+     if (process.argv.length === 3) {
+         if (process.argv[2].slice(2) === '--config') {
+             config = process.argv[3];
+         }
      }
      var options = require(config);
      mycroft.start(options);
