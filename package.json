@@ -13,7 +13,6 @@
   "bin": "./bin/mycroft",
   "private":true,
   "dependencies": {
-      "express" : "*",
       "async" : "*",
       "nodemailer" : "*",
       "mongodb" : "*"
