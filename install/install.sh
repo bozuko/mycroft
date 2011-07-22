@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-export NODE_VER=v0.5.0
+export NODE_VER=v0.4.10
 
 function install_nvm() {
     echo "*** Installing nvm"
