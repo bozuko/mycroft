@@ -30,5 +30,5 @@ echo "export PATH=~/mycroft/bin:~/node_modules/.bin/:$PATH" >> ~/.bashrc
 source ~/.bashrc
 
 # node packages
-echo "*** Installing mycroft via NPM
+echo "*** Installing mycroft via NPM"
 cd ~ && npm install mycroft
