@@ -27,6 +27,7 @@ All config is done via the config file. The config file is a module to be requir
     mycroft --config /home/mycroft/config/mycroft.conf
 
 **.mycroft**
+
     module.exports = {
         nodes: [{
             host: 'localhost',
@@ -44,7 +45,7 @@ All config is done via the config file. The config file is a module to be requir
        ...
     };
 
-#### Options
+----------------------------------
 
 **nodes** - An array of servers making up the mycroft cluster. They must be http(s) servers that handle *GET* requests for **/alive** and **/data**;
   
