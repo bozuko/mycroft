@@ -59,8 +59,24 @@ All config is done via the config file. The config file is a module to be requir
  * **port** - HTTP listening port of the node
 
 
+
 **log_file** - The full path of the log file for the process. If a log file is used console.error and console.log no longer write to standard out and to standard error. They are written to the log instead.
 
     log_file: process.env.HOME+'/logs/mycroft.log'
+
+
+**keepalive_poll_time** - The time in __ms__ between HTTP GET messages sent to /alive of each node.
+
+    keepalive_poll_time: 5000
+
+**timeout** - The time to wait for a response to an HTTP request before signaling an alert.
+
+    timeout: 5000
+
+**poll_time** - The time in __ms__ between HTTP GET messages sent to /data of each node.\
+
+    poll_time: 10000
+
+
 
 ## Plugins
