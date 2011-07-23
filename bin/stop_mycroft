@@ -1,0 +1,3 @@
+#!/bin/bash
+
+killall -9 node $HOME/node_modules/.bin/mycroft

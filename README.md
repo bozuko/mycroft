@@ -19,3 +19,11 @@ You then want to create a config file as detailed in the config section. This fi
 If you are on ubuntu you want to copy the upstart file in install/upstart to /etc/init
 
     sudo cp upstart/mycroft.conf /etc/init
+
+## Config
+
+All config is done via the config file. It's a normal node module that you require.
+
+#### Options
+
+## Plugins

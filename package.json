@@ -10,7 +10,10 @@
     "node": "~0.4.10"
   },
   "main": "./mycroft.js",
-  "bin": "./bin/mycroft",
+  "bin": {
+      "mycroft": "./bin/mycroft",
+      "stop_mycroft": "./bin/stop_mycroft"
+  },
   "private":true,
   "dependencies": {
       "async" : "*",
