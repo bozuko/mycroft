@@ -27,6 +27,7 @@ All config is done via the config file. The config file is a module to be requir
     mycroft --config /home/mycroft/config/mycroft.conf
 
 **.mycroft**
+
     module.exports = {
         nodes: [{
             host: 'localhost',
