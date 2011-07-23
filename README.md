@@ -22,8 +22,45 @@ If you are on ubuntu you want to copy the upstart file in install/upstart to /et
 
 ## Config
 
-All config is done via the config file. It's a normal node module that you require.
+All config is done via the config file. The config file is a module to be required. It's location defaults to **~/.mycroft** but can be change with the **--config** switch.
+
+    mycroft --config /home/mycroft/config/mycroft.conf
+
+**.mycroft**
+    module.exports = {
+        nodes: [{
+            host: 'localhost',
+            port: 10000
+        },{
+            protocol: 'https',
+            host: 'localhost',
+            port: 8000
+        }],
+       log_file: process.env.HOME+'/logs/mycroft.log',
+       keepalive_poll_time: 5000,
+       timeout: 5000,
+       poll_time: 10000,
+       plugins_dir: process.cwd(),
+       ...
+    };
 
 #### Options
+
+**nodes** - An array of servers making up the mycroft cluster. They must be http(s) servers that handle *GET* requests for **/alive** and **/data**;
+  
+    nodes: [{
+        protocol: 'https',
+        host: 'localhost',
+        port: 10000
+    }]
+
+ * **protocol** - 'http' (default) || 'https'
+ * **host** - DNS name or IP address of the node
+ * **port** - HTTP listening port of the node
+
+
+**log_file** - The full path of the log file for the process. If a log file is used console.error and console.log no longer write to standard out and to standard error. They are written to the log instead.
+
+    log_file: process.env.HOME+'/logs/mycroft.log'
 
 ## Plugins
