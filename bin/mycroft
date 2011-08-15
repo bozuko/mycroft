@@ -2,6 +2,7 @@
 var mycroft = require('mycroft');
 
 var config = process.env.HOME + '/.mycroft';
+process.env['NODE_NO_READLINE']=1;
 
 (function run() {
      if (process.argv.length === 3) {
